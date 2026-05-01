@@ -33,7 +33,8 @@ import {
 } from 'recharts';
 import { cn } from '@/src/lib/utils';
 import logo from './assets/images/refill_and_reward_icon.png';
-import mapImage from './assets/images/regenerated_image_1777614315098.jpg';
+
+const MAP_IMAGE_URL = '/regenerated_image_1777653971510.jpg';
 
 // --- Data ---
 
@@ -254,14 +255,14 @@ export default function App() {
                {/* Map Image Section */}
                <div className="lg:col-span-7 bg-white/5 rounded-3xl border border-white/10 relative overflow-hidden h-[300px] md:h-full">
                  <img 
-                   src={mapImage} 
+                   src={MAP_IMAGE_URL} 
                    alt="KMUTT Campus Map"
                    className="w-full h-full object-contain p-2"
                    referrerPolicy="no-referrer"
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-bento-ink/40 via-transparent to-transparent pointer-events-none"></div>
                  <button 
-                  onClick={() => window.open(mapImage, '_blank')}
+                  onClick={() => window.open(MAP_IMAGE_URL, '_blank')}
                   className="absolute bottom-4 left-4 bg-bento-accent-green text-bento-ink px-4 py-2 rounded-xl text-[10px] font-black uppercase shadow-lg active:scale-95 transition-transform"
                  >
                    View Full Map
